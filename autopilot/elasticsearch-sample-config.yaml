@@ -1,0 +1,32 @@
+# ================ Autopilot Elasticsearch Configuration =================
+
+# This is the configuration file for Elasticsearch. It comes with good 
+# defaults, you can safely deploy the cluster without changing this file.
+
+# You can read about the syntax and available configuration options here -
+# https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-configuration.html
+
+# Autopilot allows setting custom ENVIRONMENT VARS which can be accessed 
+# inside the config file with a ${CUSTOM_ENV_VAR} syntax.
+
+# ======== Generic Settings =======
+
+# The value obtained from MIN_MASTER_NODES ENV, ideal value should be (N / 2) + 1 to avoid split brain situations.
+discovery.zen.minimum_master_nodes: ${MIN_MASTER_NODES}
+
+# NUM_REPLICAS ENV is set by Autopilot to 1, that means Elasticsearch keeps one copy of data.
+index.number_of_replicas: ${NUM_REPLICAS}
+index.number_of_shards: 2
+
+# ========= END: Generic Settings =========
+
+
+# ======= Autopilot Specific Settings =======
+network.publish_host: _ethwe:ipv4_
+network.bind_host: 0
+
+discovery.type: zen
+# ES_HOSTS ENV set by Autopilot
+discovery.zen.ping.unicast.hosts: ${ES_HOSTS}
+
+# ====== END: Autopilot Specific Settings ======
