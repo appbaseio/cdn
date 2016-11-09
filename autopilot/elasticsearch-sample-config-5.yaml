@@ -18,7 +18,7 @@ discovery.zen.ping_timeout: 6s
 
 discovery.initial_state_timeout: 2m
 
-discovery.zen.publish_timeout: 60s
+discovery.zen.publish_timeout: 2m
 
 discovery.zen.fd.ping_interval: 10s
 
