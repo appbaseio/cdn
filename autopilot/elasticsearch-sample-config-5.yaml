@@ -16,6 +16,17 @@ discovery.zen.minimum_master_nodes: ${MIN_MASTER_NODES}
 
 discovery.zen.ping_timeout: 6s
 
+
+discovery.zen.ping_timeout: 6s
+
+discovery.zen.publish_timeout: 60s
+
+discovery.zen.fd.ping_interval: 2s
+
+discovery.zen.fd.ping_timeout: 60s
+
+discovery.zen.fd.ping_retries: 6
+
 # ========= END: Generic Settings =========
 
 
