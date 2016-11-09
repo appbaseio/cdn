@@ -17,6 +17,9 @@ discovery.zen.minimum_master_nodes: ${MIN_MASTER_NODES}
 index.number_of_replicas: ${NUM_REPLICAS}
 index.number_of_shards: 2
 
+discovery.zen.ping_timeout: 6s
+
+
 # ========= END: Generic Settings =========
 
 
