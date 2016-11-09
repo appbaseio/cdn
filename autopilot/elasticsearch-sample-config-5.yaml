@@ -14,6 +14,7 @@
 # The value obtained from MIN_MASTER_NODES ENV, ideal value should be (N / 2) + 1 to avoid split brain situations.
 discovery.zen.minimum_master_nodes: ${MIN_MASTER_NODES}
 
+discovery.zen.ping_timeout: 6s
 
 # ========= END: Generic Settings =========
 
