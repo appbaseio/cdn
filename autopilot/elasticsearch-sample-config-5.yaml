@@ -16,11 +16,11 @@ discovery.zen.minimum_master_nodes: ${MIN_MASTER_NODES}
 
 discovery.zen.ping_timeout: 6s
 
-discovery.initial_state_timeout: 60s
+discovery.initial_state_timeout: 2m
 
 discovery.zen.publish_timeout: 60s
 
-discovery.zen.fd.ping_interval: 2s
+discovery.zen.fd.ping_interval: 10s
 
 discovery.zen.fd.ping_timeout: 60s
 
