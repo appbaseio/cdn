@@ -16,6 +16,7 @@ discovery.zen.minimum_master_nodes: ${MIN_MASTER_NODES}
 
 discovery.zen.ping_timeout: 6s
 
+discovery.initial_state_timeout: 60s
 
 discovery.zen.publish_timeout: 60s
 
